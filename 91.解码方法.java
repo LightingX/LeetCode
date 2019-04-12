@@ -43,7 +43,7 @@ class Solution {
     public int numDecodings(String s) {
         if(s.startsWith("0"))
             return 0;
-        if(s.length() == 0 || s.length() == 1)
+        if(s.length() < 2)
             return 1;
         if(cache.containsKey(s))
             return cache.get(s);
